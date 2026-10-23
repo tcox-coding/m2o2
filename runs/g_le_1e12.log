@@ -1,0 +1,14 @@
+N = 1000000000000: 39175 primes = 1 mod 4 up to B = 1000000 (0.0s)
+87881 cofactors m <= N/(B+1) for primes in (B, N/5]: 95620 sieve blocks
+144506 tasks, 16 threads
+GPU: NVIDIA GeForce RTX 2080 Ti, 68 SMs x 3 blocks of 256 threads; 917297 work units
+GPU: large primes in 312 launches, 14.90s in kernels, done at 15.44s; then 6961980698 leaves of the small primes (2859727 runs, 2000 batches), 10.22s in kernels; 26.20s in all
+search time 26.34s (CPU threads done at 26.21s; GPU: large primes 15.44s, then leaves until 26.20s)
+
+centres examined (|D(n)| >= 3): 43423993614
+offsets total: 519019866700   pairs: 11471857282081
+candidate pairs (offsets jointly divisible by every usable prime): 16378660730 (0.143%)
+  of which n^2 + a + b is a square: 157314
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+(near misses are not searched with -s)

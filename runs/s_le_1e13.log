@@ -1,0 +1,56 @@
+N = 10000000000000: 113756 primes = 1 mod 4 up to B = 3162277 (0.0s)
+267134 cofactors m <= N/(B+1) for primes in (B, N/5]: 953853 sieve blocks
+170253 tasks, 16 threads
+  progress: small primes 430/170253 tasks, 62s
+  progress: small primes 2638/170253 tasks, 122s
+  progress: small primes 3434/170253 tasks, 182s
+  progress: small primes 4033/170253 tasks, 244s
+  progress: small primes 5976/170253 tasks, 305s
+  progress: small primes 8784/170253 tasks, 366s
+  progress: small primes 14292/170253 tasks, 426s
+  progress: small primes 31402/170253 tasks, 493s
+  progress: small primes 32196/170253 tasks, 560s
+  progress: small primes 34776/170253 tasks, 674s
+  progress: small primes 41744/170253 tasks, 784s
+  progress: small primes 43442/170253 tasks, 845s
+  progress: small primes 52679/170253 tasks, 906s
+  progress: small primes 56159/170253 tasks, 972s
+  progress: small primes 64965/170253 tasks, 1032s
+  progress: small primes 71465/170253 tasks, 1093s
+  progress: small primes 84550/170253 tasks, 1153s
+  progress: small primes 101687/170253 tasks, 1213s
+  progress: small primes 115538/170253 tasks, 1273s
+  progress: large primes 5/953853 blocks, 1369s
+  progress: large primes 34/953853 blocks, 1457s
+  progress: large primes 73/953853 blocks, 1541s
+  progress: large primes 102/953853 blocks, 1609s
+  progress: large primes 129/953853 blocks, 1671s
+  progress: large primes 186/953853 blocks, 1756s
+  progress: large primes 226/953853 blocks, 1832s
+  progress: large primes 299/953853 blocks, 1899s
+  progress: large primes 443/953853 blocks, 1963s
+  progress: large primes 774/953853 blocks, 2025s
+  progress: large primes 1628/953853 blocks, 2085s
+  progress: large primes 4119/953853 blocks, 2145s
+  progress: large primes 12813/953853 blocks, 2205s
+  progress: large primes 41700/953853 blocks, 2265s
+  progress: large primes 103254/953853 blocks, 2325s
+  progress: large primes 180252/953853 blocks, 2385s
+  progress: large primes 264946/953853 blocks, 2445s
+  progress: large primes 349342/953853 blocks, 2505s
+  progress: large primes 433388/953853 blocks, 2565s
+  progress: large primes 515059/953853 blocks, 2625s
+  progress: large primes 594158/953853 blocks, 2685s
+  progress: large primes 670975/953853 blocks, 2745s
+  progress: large primes 745929/953853 blocks, 2805s
+  progress: large primes 819318/953853 blocks, 2865s
+  progress: large primes 891307/953853 blocks, 2925s
+search time 2978.12s (centres with all primes <= B: 1321.83s, with a prime > B: 1656.29s)
+
+centres examined (|D(n)| >= 3): 424854595931
+offsets total: 5432446038625   pairs: 142860561724898
+candidate pairs (offsets jointly divisible by every usable prime): 213413670889 (0.149%)
+  of which n^2 + a + b is a square: 1453353
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+(near misses are not searched with -s)

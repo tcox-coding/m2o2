@@ -1,0 +1,57 @@
+# ./mss-gpu -g 1e13 16 in three sessions: killed (kill -9) after 95 s, before its first checkpoint;
+# then stopped by SIGTERM after 231 s with a checkpoint; then resumed to the end.
+
+# ---- session a
+N = 10000000000000: 113756 primes = 1 mod 4 up to B = 3162277 (0.1s)
+267134 cofactors m <= N/(B+1) for primes in (B, N/5]: 953853 sieve blocks
+170253 tasks, 16 threads
+GPU: NVIDIA GeForce RTX 2080 Ti, 68 SMs x 3 blocks of 256 threads; 9259764 work units
+  progress: small primes 427/170253 tasks, 60s
+  progress: GPU large primes 2230285/9259764 units, 61s
+
+# ---- session b
+N = 10000000000000: 113756 primes = 1 mod 4 up to B = 3162277 (0.1s)
+267134 cofactors m <= N/(B+1) for primes in (B, N/5]: 953853 sieve blocks
+170253 tasks, 16 threads
+GPU: NVIDIA GeForce RTX 2080 Ti, 68 SMs x 3 blocks of 256 threads; 9259764 work units
+  progress: GPU large primes 2068781/9259764 units, 61s
+  progress: small primes 428/170253 tasks, 61s
+  progress: GPU large primes 4569952/9259764 units, 121s
+  progress: small primes 2404/170253 tasks, 121s
+  progress: GPU large primes 7496700/9259764 units, 181s
+  progress: small primes 3415/170253 tasks, 182s
+  checkpoint: 3602/170253 tasks, 9259764/9259764 GPU units, 231s searched (took 171.1s)
+signal: writing a checkpoint, then stopping
+  checkpoint: 3602/170253 tasks, 9259764/9259764 GPU units, 231s searched (took 0.0s)
+
+stopped after 231.34s, 0.06h searched in all; run the same command to resume.  So far:
+
+centres examined (|D(n)| >= 3): 355974049225
+offsets total: 3302279649451   pairs: 52713817788456
+candidate pairs (offsets jointly divisible by every usable prime): 71226502850 (0.135%)
+  of which n^2 + a + b is a square: 425240
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+(near misses are not searched with -s)
+
+# ---- session c
+N = 10000000000000: 113756 primes = 1 mod 4 up to B = 3162277 (0.1s)
+267134 cofactors m <= N/(B+1) for primes in (B, N/5]: 953853 sieve blocks
+170253 tasks, 16 threads
+resuming from mss-gpu-g-10000000000000.ckpt: 3602/170253 tasks, 9259764/9259764 GPU units done, 0.06h searched in 1 session
+GPU: NVIDIA GeForce RTX 2080 Ti, 68 SMs x 3 blocks of 256 threads; 9259764 work units
+  progress: small primes 39490/170253 tasks, 60s
+  progress: GPU leaves 15536559493, 61s
+  progress: small primes 79660/170253 tasks, 120s
+  progress: GPU leaves 35308252043, 121s
+GPU: large primes in 0 launches, 0.00s in kernels, done at 1.31s; then 65809217117 leaves of the small primes (13840120 runs), 126.34s in kernels; 139.29s in all
+search time 139.50s (CPU threads done at 139.14s; GPU: large primes 1.31s, then leaves until 139.29s)
+(resumed: 0.10h searched in 2 sessions in all)
+
+centres examined (|D(n)| >= 3): 424854595931
+offsets total: 5432446038625   pairs: 142860561724898
+candidate pairs (offsets jointly divisible by every usable prime): 213413670889 (0.149%)
+  of which n^2 + a + b is a square: 1453353
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+(near misses are not searched with -s)

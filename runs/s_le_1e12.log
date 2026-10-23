@@ -1,0 +1,20 @@
+N = 1000000000000: 39175 primes = 1 mod 4 up to B = 1000000 (0.0s)
+87881 cofactors m <= N/(B+1) for primes in (B, N/5]: 95620 sieve blocks
+144506 tasks, 16 threads
+  progress: small primes 33869/144506 tasks, 60s
+  progress: large primes 25/95620 blocks, 122s
+  progress: large primes 515/95620 blocks, 183s
+  progress: large primes 78781/95620 blocks, 243s
+search time 252.19s (centres with all primes <= B: 113.83s, with a prime > B: 138.36s)
+
+centres examined (|D(n)| >= 3): 43423993614
+offsets total: 519019866700   pairs: 11471857282081
+candidate pairs (offsets jointly divisible by every usable prime): 16378660730 (0.143%)
+  of which n^2 + a + b is a square: 157314
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+(near misses are not searched with -s)
+
+real	4m15.192s
+user	65m29.550s
+sys	0m8.985s

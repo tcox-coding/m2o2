@@ -1,0 +1,16 @@
+# Build outputs
+/mss
+/mss-wide
+/mss-gpu
+*.o
+
+# State a search writes to the working directory while it runs
+*.ckpt
+*.ckpt.tmp
+results.csv.*
+finds.txt
+finds.csv
+
+# Logs of runs that did not complete
+runs/*.partial.log
+runs/g_le_2e14.log

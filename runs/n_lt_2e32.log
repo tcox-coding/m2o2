@@ -1,0 +1,19 @@
+N = 4294967295: 22009054 primes = 1 mod 4 up to N/5 (6.4s)
+176448 tasks, 16 threads
+  progress: 2996/176448 tasks, 30s
+  progress: 31424/176448 tasks, 61s
+  progress: 38518/176448 tasks, 92s
+  progress: 56081/176448 tasks, 122s
+search time 132.6s
+
+centres examined (|D(n)| >= 3): 196614507
+offsets total: 1958960942   pairs checked: 27316185118   checksum: aa6e06eb2e9aa366
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+8 squares (square centre):           0
+7-square near misses: 0 (of which 0 have a negative cell; 0 repeated-entry skipped)
+  a,b,a+b in D (a-b line not square)                0
+  a,b,a-b in D (a+b line not square)                0
+  a,a+b,a-b in D (b line not square)                0
+  b,a+b,a-b in D (a line not square)                0
+wall 139.96s, peak RSS 545684KB

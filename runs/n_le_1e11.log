@@ -1,0 +1,20 @@
+N = 100000000000: 13625 primes = 1 mod 4 up to B = 316227 (0.0s)
+29020 cofactors m <= N/(B+1) for primes in (B, N/5]: 9863 sieve blocks
+119461 tasks, 16 threads
+  progress: small primes 6648/119461 tasks, 60s
+  progress: small primes 28563/119461 tasks, 121s
+  progress: small primes 81543/119461 tasks, 181s
+  progress: large primes 342/9863 blocks, 241s
+search time 261.49s (centres with all primes <= B: 182.43s, with a prime > B: 79.06s)
+
+centres examined (|D(n)| >= 3): 4440149081
+offsets total: 49350733738   pairs checked: 906281915180   checksum: b817945aa16b7f4b
+pair filter hits checked exactly: 3979220138 (0.439%)
+MAGIC SQUARES OF 9 DISTINCT SQUARES: 0
+9 squares with a repeated entry:     0
+8 squares (square centre):           0
+7-square near misses: 0 (of which 0 have a negative cell; 0 repeated-entry skipped)
+  a,b,a+b in D (a-b line not square)                0
+  a,b,a-b in D (a+b line not square)                0
+  a,a+b,a-b in D (b line not square)                0
+  b,a+b,a-b in D (a line not square)                0
